@@ -44,7 +44,12 @@ a {
     min-height: 95vh;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 64px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
 }
 
 /* Header */
@@ -92,7 +97,7 @@ header {
 .hero-text h2 {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     color: var(--color-item);
 }
 
@@ -116,6 +121,117 @@ header {
     border-top: solid 1px var(--color-highlight);
     border-radius: 8px;
     box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-top-right span {
+    font-size: 18px;
+}
+
+.profile-top-right .profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+}
+
+.section-title {
+    color: var(--color-item);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.profile-top-container {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--color-item);
+    max-width: 700px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+}
+
+.profile-top-right p {
+    margin-top: 32px;
+    line-height: 1.5;
+}
+
+.profile-bottom-container {
+    color: var(--color-item);
+    max-width: 700px;
+}
+
+.profile-bottom-container p {
+    margin-top: 32px;
+    line-height: 1.5;
+}
+
+.hometown {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hometown-image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hometown-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    color: var(--color-item);
+    border: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-highlight);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+    max-width: 300px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 15px;
+}
+
+.caption h3 {
+    margin-top: 0;
+}
+
+.photo-credit {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
 }
 
 /* Footer */
@@ -171,5 +287,10 @@ footer span {
 @media (max-width: 768px) {
   .card {
     flex: 100%;
+  }
+
+  .profile-top-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
