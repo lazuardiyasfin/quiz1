@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 16px auto;
+    max-width: min(90vw, 1200px);
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-wrapper {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.toggle-mode-btn {
+    width: 32px;
+    height: 32px;
+    font-size: large;
+    border-radius: 8px;
+    background-color: white;
+    border: 0px;
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;   
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-mode-btn svg {
+    stroke: black;
+    stroke-width: 2;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: black;
+}
+
+/* Main */
+
+.hero-text{
+    margin: 16px 0px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card {
+    font-size: 16px;
+    flex: 1 1 calc(50% - 16px);
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+}
+
+/* Footer */
+
+footer {
+    margin: auto auto 0px auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.links svg {
+    stroke: black;
+    stroke-width: 3;
+    width: 2rem;
+    height: 2rem;
+}
+
+.links span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Effects */
+
+.card, .toggle-mode-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .toggle-mode-btn:hover {
+    background: linear-gradient(0deg, whitesmoke, white)
+}
+
+.links svg {
+    transition: stroke 0.3s ease;
+}
+
+.links svg:hover {
+    stroke: #8d859d;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .card {
+    flex: 100%;
+  }
+}
